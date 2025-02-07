@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TularampurHighSchool</title>
+    <!-- google-font-sora-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-tiro-bangla-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/4f4ce85480.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwind + daisyui-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              accent: "#0077b6",
+            },
+            fontFamily: {
+              sora: ["Sora", "serif"],
+              tiro:["Tiro Bangla", "serif"]
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sora font-tiro">
+    <header>
+      <nav
+        class="container mx-auto border border-blue-400 md:border-0 lg:border-0 p-4"
+      >
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <a><img src="assets/Logo1.png" alt="logo-header" /></a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>বিদ্যালয় সম্পর্কিত</a></li>
+              <li>
+                <details>
+                  <summary>বিবিধ</summary>
+                  <ul class="p-2">
+                    <li><a>বেতন</a></li>
+                    <li><a>আবেদন সমূহ</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li><a>যোগাযোগ</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-4">
+            <a class="hidden lg:block" href=""
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+            <a class="hidden lg:block" href=""
+              ><i class="fa-solid fa-book"></i></a>
+            <a
+              class="btn border-blue-400 bg-white text-black hidden lg:block lg:flex lg:items-center lg:justify-center"
+              >Login</a
+            >
+            <a
+              class="btn bg-accent text-white hidden lg:block lg:flex lg:items-center lg:justify-center"
+              >ভর্তি আবেদন</a
+            >
+            <div class="dropdown dropdown-end">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>বিদ্যালয় সম্পর্কিত</a></li>
+                <li>
+                  <a>বিবিধ</a>
+                  <ul class="p-2">
+                    <li><a>বেতন</a></li>
+                    <li><a>আবেদন সমূহ</a></li>
+                  </ul>
+                </li>
+                <li><a>যোগাযোগ</a></li>
+                <li>
+                  <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+                <li>
+                  <a><i class="fa-solid fa-book"></i></a>
+                </li>
+                <li>
+                  <a class="btn mx-10 border-blue-400 bg-white text-black"
+                    >Login</a
+                  >
+                </li>
+                <li><a class="btn mx-10 bg-accent text-white">ভর্তি আবেদন</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- linear-bg -->
+      <section class="bg-gradient-to-t from-pink-200 to-white h-full mb-28">
+        <!-- banner -->
+        <div class="container mx-auto">
+          <!-- banner Headings -->
+          <div class="text-center m-8">
+            <h2 class="text-5xl font-bold mb-4">
+              বিশ্বায়নের অগ্রযাত্রায়
+              <span class="text-accent">আধুনিক<br />শিক্ষার </span>কারিগর <span><i class="fa-solid fa-exclamation animate-bounce"></i></span>
+            </h2>
+            <p>
+              "আমরা তথ্য ও প্রযুক্তির যুগে শিক্ষার্থীদের সাফল্যের মশালবাহক। আমাদের লক্ষ্য হল জ্ঞান ও উদ্ভাবনের মাধ্যমে একটি উজ্জ্বল ভবিষ্যৎ তৈরি করা। ভবিষ্যতের নেতৃবৃন্দকে গড়ে তোলার জন্য প্রতিশ্রুতিবদ্ধ।"
+            </p>
+          </div>
+          <!-- banner profile picture -->
+          <div class="flex justify-center">
+            <img class="w-1/2 h-1/2 rounded-t-lg" src="assets/banner.jpg" alt="Vegetables" />
+          </div>
+        </div>
+      </section>
+      <!-- 3-card -->
+      <section class="container mx-auto my-36">
+        <div>
+          <h3 class="text-accent font-bold text-4xl mb-12">আমাদের বৈশিষ্ট্য সমূহ</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-pink-100 p-8 flex flex-col items-center text-center rounded-2xl">
+            <img class="bg-white rounded-full p-4 my-5" src="assets/service.png" alt="24/7 logo" />
+            <h2 class="my-5 font-semibold text-2xl">২৪/৭ সহায়তা ও পরামর্শ</h2>
+            <p class="text-blue-500">
+              ⏰ নিরবিচ্ছিন্ন সাফল্যের জন্য সর্বদা আপনার পাশে। আমরা প্রতিশ্রুতিবদ্ধ ২৪/৭ সহায়তা প্রদানে, যাতে আপনাকে কখনও কোনও মুহূর্তে সমস্যায় পড়তে না হয়। আপনার সন্তানের সফলতার প্রতি আমাদের নিষ্ঠা সর্বদা অটুট। 📚
+            </p>
+          </div>
+          <div class="bg-pink-100 p-8 flex flex-col items-center text-center rounded-2xl">
+            <img class="bg-white rounded-full p-4 my-5"src="assets/feature.png" alt="fast delivery logo" />
+            <h2 class="my-5 font-semibold text-2xl">সুসজ্জিত শ্রেণীকক্ষ</h2>
+            <p class="text-blue-500">
+              🏫 আমাদের ক্লাসরুমগুলি শিক্ষার্থীদের সম্পূর্ণ অভিজ্ঞতা প্রদানে উদ্ভাবনী প্রযুক্তি ব্যবহার করে, যাতে তারা সক্রিয়ভাবে অংশগ্রহণ করতে এবং আরও দক্ষতার সাথে শিখতে পারে। 🎒
+            </p>
+          </div>
+          <div class="bg-pink-100 p-8 flex flex-col items-center text-center rounded-2xl" >
+            <img class="bg-white rounded-full p-4 my-5" src="assets/teacher.png" alt="Healthy logo" />
+            <h2 class="my-5 font-semibold text-2xl">অভিজ্ঞ শিক্ষকমণ্ডলী</h2>
+            <p class="text-blue-500">
+              👨‍🏫আমাদের প্রতিষ্ঠানে শিক্ষার মান উন্নত করার প্রধান স্তম্ভ হলো অভিজ্ঞ শিক্ষকমণ্ডলী। তাঁদের নিবেদিতপ্রাণ অধ্যবসায় ও গভীর জ্ঞানের মিশ্রণে শিক্ষার্থীদের সর্বোচ্চ মানের শিক্ষা প্রদান করা হয়। 👩‍🏫
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- popular-section -->
+       <section class="bg-pink-200 pb-6">
+        <div class="container mx-auto">
+          <div>
+            <h2 class="text-accent font-bold text-4xl py-20">Popular Products</h2>
+          </div>
+          <div class="">
+            <!-- Promotional Banner -->
+            <div class="grid sm:grid-cols-1 lg:grid-cols-2 lg:gap-4">
+        
+              <!-- Offer Card -->
+              <div class="bg-gradient-to-br from-accent to-white p-8 rounded-2xl">
+                  <div>
+                    <h2 class="text-3xl font-bold text-white">30% off</h2>
+                  <p class="text-gray-700 mt-2">Discover a world of treats and essentials handpicked for you.</p>
+                  <button class="btn btn-primary mt-4 border-none bg-white text-black">Buy Now</button>
+                  </div>
+                  <div class="flex justify-end">
+                    <img src="assets/vegetable-offer.png" alt="offer">
+                  </div>
+              </div>
+            <!-- Product Listing -->
+            <div class="my-4 grid lg:my-0 grid-cols-2 lg:grid-cols-3 gap-4">
+              <!-- Product Card -->
+              <div class="card bg-white shadow-md p-4 rounded-xl grid grid-cols-2 items-center justify-center">
+                  <img src="assets/onn.png" alt="Onion" class="bg-slate-100 w-16 h-16 rounded-lg">
+                  <div class="flex flex-col">
+                      <div class="text-sm">⭐ 4.6</div>
+                      <h3 class="text-lg font-semibold">Onion <br> 1 KG</h3>
+                      <p class="text-gray-600 font-bold">$16</p>
+                  </div>
+              </div>
+              <div class="card bg-white shadow-md p-4 rounded-xl grid grid-cols-2 items-center justify-center">
+                  <img src="assets/tmt.png" alt="tomato" class="bg-slate-100 w-16 h-16 rounded-lg">
+                  <div class="flex flex-col">
+                      <div class="text-sm">⭐ 4.1</div>
+                      <h3 class="text-lg font-semibold">Tomato <br> 1 KG</h3>
+                      <p class="text-gray-600 font-bold">$19</p>
+                  </div>
+              </div>
+              <div class="card bg-white shadow-md p-4 rounded-xl grid grid-cols-2 items-center justify-center">
+                  <img src="assets/ptt.png" alt="potato" class="bg-stone-100 w-16 h-16 rounded-lg">
+                  <div class="flex flex-col">
+                      <div class="text-sm">⭐ 4.0</div>
+                      <h3 class="text-lg font-semibold">Potato <br> 1 KG</h3>
+                      <p class="text-gray-600 font-bold">$28</p>
+                  </div>
+              </div>
+              <div class="card bg-white shadow-md p-4 rounded-xl grid grid-cols-2 items-center justify-center">
+                  <img src="assets/onn.png" alt="Onion" class="bg-slate-100 w-16 h-16 rounded-lg">
+                  <div class="flex flex-col">
+                      <div class="text-sm">⭐ 4.6</div>
+                      <h3 class="text-lg font-semibold">Onion <br> 1 KG</h3>
+                      <p class="text-gray-600 font-bold">$16</p>
+                  </div>
+              </div>
+              <div class="card bg-white shadow-md p-4 rounded-xl grid grid-cols-2 items-center justify-center">
+                  <img src="assets/tmt.png" alt="tomato" class="bg-slate-100 w-16 h-16 rounded-lg">
+                  <div class="flex flex-col">
+                      <div class="text-sm">⭐ 4.1</div>
+                      <h3 class="text-lg font-semibold">Tomato <br> 1 KG</h3>
+                      <p class="text-gray-600 font-bold">$19</p>
+                  </div>
+              </div>
+              <div class="card bg-white shadow-md p-4 rounded-xl grid grid-cols-2 items-center justify-center">
+                  <img src="assets/ptt.png" alt="potato" class="bg-stone-100 w-16 h-16 rounded-lg">
+                  <div class="flex flex-col">
+                      <div class="text-sm">⭐ 4.0</div>
+                      <h3 class="text-lg font-semibold">Potato <br> 1 KG</h3>
+                      <p class="text-gray-600 font-bold">$28</p>
+                  </div>
+              </div>
+              <div class="card bg-white shadow-md p-4 rounded-xl grid grid-cols-2 items-center justify-center">
+                  <img src="assets/onn.png" alt="Onion" class="bg-slate-100 w-16 h-16 rounded-lg">
+                  <div class="flex flex-col">
+                      <div class="text-sm">⭐ 4.6</div>
+                      <h3 class="text-lg font-semibold">Onion <br> 1 KG</h3>
+                      <p class="text-gray-600 font-bold">$16</p>
+                  </div>
+              </div>
+              <div class="card bg-white shadow-md p-4 rounded-xl grid grid-cols-2 items-center justify-center">
+                  <img src="assets/tmt.png" alt="tomato" class="bg-slate-100 w-16 h-16 rounded-lg">
+                  <div class="flex flex-col">
+                      <div class="text-sm">⭐ 4.1</div>
+                      <h3 class="text-lg font-semibold">Tomato <br> 1 KG</h3>
+                      <p class="text-gray-600 font-bold">$19</p>
+                  </div>
+              </div>
+              <div class="card bg-white shadow-md p-4 rounded-xl grid grid-cols-2 items-center justify-center">
+                  <img src="assets/ptt.png" alt="potato" class="bg-stone-100 w-16 h-16 rounded-lg">
+                  <div class="flex flex-col">
+                      <div class="text-sm">⭐ 4.0</div>
+                      <h3 class="text-lg font-semibold">Potato <br> 1 KG</h3>
+                      <p class="text-gray-600 font-bold">$28</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+       </section>
+       <!-- wallpaper-carousel -->
+        <section class="container mx-auto">
+          <div>
+            <h2 class="text-accent font-bold text-4xl py-20">সর্বশেষ আলোকচিত্র</h2>
+          </div>
+          <div class="py-16 px-16">
+            <div class="carousel w-full">
+              <div id="slide1" class="carousel-item relative w-full">
+                <img
+                  src="assets/img-1.jpg"
+                  class="w-full rounded-lg" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                  <a href="#slide4" class="btn btn-circle">❮</a>
+                  <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+              </div>
+              <div id="slide2" class="carousel-item relative w-full">
+                <img
+                  src="assets/img-2.jpg"
+                  class="w-full rounded-lg" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                  <a href="#slide1" class="btn btn-circle">❮</a>
+                  <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+              </div>
+              <div id="slide3" class="carousel-item relative w-full">
+                <img
+                  src="assets/img-3.jpg"
+                  class="w-full rounded-lg" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                  <a href="#slide2" class="btn btn-circle">❮</a>
+                  <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+              </div>
+              <div id="slide4" class="carousel-item relative w-full">
+                <img
+                  src="assets/img-4.jpg"
+                  class="w-full rounded-lg" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                  <a href="#slide3" class="btn btn-circle">❮</a>
+                  <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- challenge-section -->
+         <section class="container mx-auto">
+          <div class="flex flex-col items-center justify-center gap-8 text-center mt-8 mb-96">
+            <div>
+              <h2 class="font-extrabold text-4xl">Please rate to Share Your Experience</h2>
+            </div>
+            <div class="max-w-72">
+              <div class="bg-base-200 collapse">
+                <input type="checkbox" class="peer" />
+                <div
+                  class="collapse-title bg-blue-400 text-primary-content peer-checked:bg-blue-400 peer-checked:text-secondary-content text-white">
+                  Click to see Rating button
+                </div>
+                <div
+                  class="collapse-content bg-blue-400 text-primary-content peer-checked:bg-blue-400 peer-checked:text-secondary-content">
+                  <div class="rating rating-lg rating-half">
+                    <input type="radio" name="rating-10" class="rating-hidden" />
+                    <input type="radio" name="rating-10" class="mask mask-star-2 mask-half-1 bg-yellow-300" />
+                    <input type="radio" name="rating-10" class="mask mask-star-2 mask-half-2 bg-yellow-400" />
+                    <input
+                      type="radio"
+                      name="rating-10"
+                      class="mask mask-star-2 mask-half-1 bg-yellow-300"
+                      checked="checked" />
+                    <input type="radio" name="rating-10" class="mask mask-star-2 mask-half-2 bg-yellow-400" />
+                    <input type="radio" name="rating-10" class="mask mask-star-2 mask-half-1 bg-yellow-300" />
+                    <input type="radio" name="rating-10" class="mask mask-star-2 mask-half-2 bg-yellow-400" />
+                    <input type="radio" name="rating-10" class="mask mask-star-2 mask-half-1 bg-yellow-300" />
+                    <input type="radio" name="rating-10" class="mask mask-star-2 mask-half-2 bg-yellow-400" />
+                    <input type="radio" name="rating-10" class="mask mask-star-2 mask-half-1 bg-yellow-300" />
+                    <input type="radio" name="rating-10" class="mask mask-star-2 mask-half-2 bg-yellow-400" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </section>
+    </main>
+    <footer class="bg-accent">
+      <div class="container mx-auto relative">
+        <!-- absolute -->
+        <div class="absolute -top-80 left-5 right-5 lg:left-14 lg:right-14 bg-pink-100 rounded-lg p-8 lg:p-36 ">
+          <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
+            <div><img src="assets/news-letter.png" alt="news-letter"></div>
+          <div class="flex flex-col items-center lg:items-start justify-center text-center lg:text-start gap-6">
+            <div><h3 class="font-bold text-accent text-2xl lg:text-4xl lg:text-black">Get <span class="text-accent">Latest</span> Information <span><i class="fa-solid fa-exclamation animate-bounce"></i></span></h3></div>
+            <div><p class="text-base lg:text-xl">News, Bulletin, Feedback, Support and more.</p></div>
+            <div><input type="text" placeholder="Enter email...." class="input w-full max-w-xs bg-white" /></div>
+            <div><button class="btn bg-accent text-white rounded-lg">Subscribe</button></div>
+          </div>
+          </div>
+        </div>
+        <!-- footer -->
+        <div class="flex flex-col lg:flex-row lg:justify-between gap-8 pb-12 pt-96 px-5 lg:px-36 lg:pb-36">
+          <div>
+            <img class="mb-4" src="assets/Logo1.png" alt="logo-footer">
+            <p class="text-white">বিশ্বায়নের অগ্রযাত্রায় আধুনিক শিক্ষার কারিগর ।</p>
+          </div>
+          <div class="text-white">
+            <a href=""><p class="mb-4">বিদ্যালয় সম্পর্কিত</p></a>
+            <a href=""><p class="mb-4">বিবিধ</p></a>
+            <a href=""><p class="mb-4">যোগাযোগ</p></a>
+          </div>
+          <div class="text-white">
+            <div class="mb-4"><p>Follow Us</p></div>
+            <div class="flex gap-4">
+              <div><a href=""><i class="fa-brands fa-facebook"></i></a></div>
+              <div><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+              <div><a href=""><i class="fa-brands fa-linkedin"></i></a></div>
+              <div><a href=""><i class="fa-brands fa-youtube"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
