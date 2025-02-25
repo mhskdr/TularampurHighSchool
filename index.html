@@ -55,31 +55,31 @@
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-              <li><a>বিদ্যালয় সম্পর্কিত</a></li>
+              <li><a onclick="message()">বিদ্যালয় সম্পর্কিত</a></li>
               <li>
                 <details>
                   <summary>বিবিধ</summary>
                   <ul class="p-2">
-                    <li><a>বেতন</a></li>
-                    <li><a>আবেদন সমূহ</a></li>
+                    <li><a onclick="message()">বেতন</a></li>
+                    <li><a onclick="message()">আবেদন সমূহ</a></li>
                   </ul>
                 </details>
               </li>
-              <li><a>যোগাযোগ</a></li>
+              <li><a onclick="message()">যোগাযোগ</a></li>
             </ul>
           </div>
           <div class="navbar-end gap-4">
-            <a class="hidden lg:block" href=""
+            <a onclick="message()" class="hidden lg:block" href=""
               ><i class="fa-solid fa-magnifying-glass"></i
             ></a>
-            <a class="hidden lg:block" href=""
+            <a onclick="message()" class="hidden lg:block" href=""
               ><i class="fa-solid fa-book"></i></a>
             <a
-              class="btn border-blue-400 bg-white text-black hidden lg:block lg:flex lg:items-center lg:justify-center"
+            onclick="message()" class="btn border-blue-400 bg-white text-black hidden lg:block lg:flex lg:items-center lg:justify-center"
               >Login</a
             >
             <a
-              class="btn bg-accent text-white hidden lg:block lg:flex lg:items-center lg:justify-center"
+              onclick="message()" class="btn bg-accent text-white hidden lg:block lg:flex lg:items-center lg:justify-center"
               >ভর্তি আবেদন</a
             >
             <div class="dropdown dropdown-end">
@@ -103,27 +103,27 @@
                 tabindex="0"
                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
               >
-                <li><a>বিদ্যালয় সম্পর্কিত</a></li>
+                <li><a onclick="message()">বিদ্যালয় সম্পর্কিত</a></li>
                 <li>
                   <a>বিবিধ</a>
                   <ul class="p-2">
-                    <li><a>বেতন</a></li>
-                    <li><a>আবেদন সমূহ</a></li>
+                    <li><a onclick="message()">বেতন</a></li>
+                    <li><a onclick="message()">আবেদন সমূহ</a></li>
                   </ul>
                 </li>
-                <li><a>যোগাযোগ</a></li>
+                <li><a onclick="message()">যোগাযোগ</a></li>
                 <li>
-                  <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                  <a onclick="message()"><i class="fa-solid fa-magnifying-glass"></i></a>
                 </li>
                 <li>
-                  <a><i class="fa-solid fa-book"></i></a>
+                  <a onclick="message()"><i class="fa-solid fa-book"></i></a>
                 </li>
                 <li>
-                  <a class="btn mx-10 border-blue-400 bg-white text-black"
+                  <a onclick="message()" class="btn mx-10 border-blue-400 bg-white text-black"
                     >Login</a
                   >
                 </li>
-                <li><a class="btn mx-10 bg-accent text-white">ভর্তি আবেদন</a></li>
+                <li><a onclick="message()" class="btn mx-10 bg-accent text-white">ভর্তি আবেদন</a></li>
               </ul>
             </div>
           </div>
@@ -148,7 +148,7 @@
           </div>
           <!-- banner profile picture -->
           <div class="flex justify-center">
-            <img class="w-3/4 rounded-t-lg" src="assets/banner.jpg" alt="banner" />
+            <img class="w-full lg:w-3/4 rounded-t-lg" src="assets/banner.jpg" alt="banner" />
           </div>
         </div>
       </section>
@@ -206,51 +206,51 @@
             <div class="grid sm:grid-cols-1 lg:grid-cols-2 lg:gap-4">
         
               <!-- student Card -->
-              <div class="bg-gradient-to-br from-accent to-white p-8 rounded-2xl">
+              <div class="bg-gradient-to-br from-accent to-white p-8 rounded-2xl grid grid-cols-2 gap-4">
                   <div>
                     <h2 class="text-3xl font-bold text-white">আমাদের ক্লাস</h2>
-                  <p class="text-gray-700 mt-2">প্রাণবন্ত শিক্ষার্থী</p>
-                  <button class="btn btn-primary mt-4 border-none bg-white text-black">ঘুরে দেখুন</button>
+                    <p class="text-gray-700 mt-2">প্রাণবন্ত শিক্ষার্থী</p>
+                    <button onclick="message()" class="btn btn-primary mt-4 border-none bg-white text-black">ঘুরে দেখুন</button>
                   </div>
-                  <div class="flex justify-end">
-                    <img src="assets/vegetable-offer.png" alt="offer">
+                  <div>
+                    <img class="rounded-2xl" src="assets/yelling.png" alt="Students">
                   </div>
               </div>
             <!-- class Listing -->
             <div class="my-4 grid lg:my-0 grid-cols-2 gap-4">
               <!-- class Card -->
               <div class="card bg-white shadow-md p-4 rounded-xl grid grid-cols-2 items-center justify-center">
-                  <img src="assets/onn.png" alt="Onion" class="bg-slate-100 w-16 h-16 rounded-lg">
+                  <img src="assets/6 .png" alt="ষষ্ঠ শ্রেণি" class="bg-slate-100 w-16 h-16 rounded-lg">
                   <div class="flex flex-col">
                       <h3 class="text-lg font-semibold">ষষ্ঠ<br>শ্রেণি</h3>
                   </div>
               </div>
               <div class="card bg-white shadow-md p-4 rounded-xl grid grid-cols-2 items-center justify-center">
-                  <img src="assets/tmt.png" alt="tomato" class="bg-slate-100 w-16 h-16 rounded-lg">
+                  <img src="assets/7.png" alt="সপ্তম শ্রেণি" class="bg-slate-100 w-16 h-16 rounded-lg">
                   <div class="flex flex-col">
                       <h3 class="text-lg font-semibold">সপ্তম<br>শ্রেণি</h3>
                   </div>
               </div>
               <div class="card bg-white shadow-md p-4 rounded-xl grid grid-cols-2 items-center justify-center">
-                  <img src="assets/ptt.png" alt="potato" class="bg-stone-100 w-16 h-16 rounded-lg">
+                  <img src="assets/8.png" alt="অষ্টম শ্রেণি" class="bg-stone-100 w-16 h-16 rounded-lg">
                   <div class="flex flex-col">
                       <h3 class="text-lg font-semibold">অষ্টম<br>শ্রেণি</h3>
                   </div>
               </div>
               <div class="card bg-white shadow-md p-4 rounded-xl grid grid-cols-2 items-center justify-center">
-                  <img src="assets/onn.png" alt="Onion" class="bg-slate-100 w-16 h-16 rounded-lg">
+                  <img src="assets/9.png" alt="নবম শ্রেণি" class="bg-slate-100 w-16 h-16 rounded-lg">
                   <div class="flex flex-col">
                       <h3 class="text-lg font-semibold">নবম<br>শ্রেণি</h3>
                   </div>
               </div>
               <div class="card bg-white shadow-md p-4 rounded-xl grid grid-cols-2 items-center justify-center">
-                  <img src="assets/tmt.png" alt="tomato" class="bg-slate-100 w-16 h-16 rounded-lg">
+                  <img src="assets/10.png" alt="দশম শ্রেণি" class="bg-slate-100 w-16 h-16 rounded-lg">
                   <div class="flex flex-col">
                       <h3 class="text-lg font-semibold">দশম<br>শ্রেণি</h3>
                   </div>
               </div>
               <div class="card bg-white shadow-md p-4 rounded-xl grid grid-cols-2 items-center justify-center">
-                  <img src="assets/ptt.png" alt="potato" class="bg-stone-100 w-16 h-16 rounded-lg">
+                  <img src="assets/10+.png" alt="প্রাক্তন শ্রেণি" class="bg-stone-100 w-16 h-16 rounded-lg">
                   <div class="flex flex-col">
                       <h3 class="text-lg font-semibold">প্রাক্তন<br>শ্রেণি</h3>
                   </div>
@@ -264,14 +264,14 @@
             <h2 class="text-accent font-bold text-4xl py-20">সর্বশেষ আলোকচিত্র</h2>
           </div>
           <div class="py-16 px-16">
-            <div class="carousel w-full">
+            <div class="carousel w-full" id="sliderCarouselId">
               <div id="slide1" class="carousel-item relative w-full">
                 <img
                   src="assets/img-1.jpg"
                   class="w-full rounded-lg" />
                 <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                  <a href="#slide4" class="btn btn-circle">❮</a>
-                  <a href="#slide2" class="btn btn-circle">❯</a>
+                  <a href="#" class="btn btn-circle"onclick="navigateSlide(event, 'slide4')">❮</a>
+                  <a href="#" class="btn btn-circle"onclick="navigateSlide(event, 'slide2')">❯</a>
                 </div>
               </div>
               <div id="slide2" class="carousel-item relative w-full">
@@ -279,8 +279,8 @@
                   src="assets/img-2.jpg"
                   class="w-full rounded-lg" />
                 <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                  <a href="#slide1" class="btn btn-circle">❮</a>
-                  <a href="#slide3" class="btn btn-circle">❯</a>
+                  <a href="#" class="btn btn-circle"onclick="navigateSlide(event, 'slide1')">❮</a>
+                  <a href="#" class="btn btn-circle"onclick="navigateSlide(event, 'slide3')">❯</a>
                 </div>
               </div>
               <div id="slide3" class="carousel-item relative w-full">
@@ -288,8 +288,8 @@
                   src="assets/img-3.jpg"
                   class="w-full rounded-lg" />
                 <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                  <a href="#slide2" class="btn btn-circle">❮</a>
-                  <a href="#slide4" class="btn btn-circle">❯</a>
+                  <a href="#" class="btn btn-circle"onclick="navigateSlide(event, 'slide2')">❮</a>
+                  <a href="#" class="btn btn-circle"onclick="navigateSlide(event, 'slide4')">❯</a>
                 </div>
               </div>
               <div id="slide4" class="carousel-item relative w-full">
@@ -297,8 +297,8 @@
                   src="assets/img-4.jpg"
                   class="w-full rounded-lg" />
                 <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                  <a href="#slide3" class="btn btn-circle">❮</a>
-                  <a href="#slide1" class="btn btn-circle">❯</a>
+                  <a href="#" class="btn btn-circle"onclick="navigateSlide(event, 'slide3')">❮</a>
+                  <a href="#" class="btn btn-circle"onclick="navigateSlide(event, 'slide1')">❯</a>
                 </div>
               </div>
             </div>
@@ -417,7 +417,7 @@
             <div><h3 class="font-bold text-accent text-2xl lg:text-4xl lg:text-black">Get <span class="text-accent">Latest</span> Information <span><i class="fa-solid fa-exclamation animate-bounce"></i></span></h3></div>
             <div><p class="text-base lg:text-xl">News, Bulletin, Feedback, Support and more.</p></div>
             <div><input type="text" placeholder="Enter email...." class="input w-full max-w-xs bg-white" /></div>
-            <div><button class="btn bg-accent text-white rounded-lg">Subscribe</button></div>
+            <div><button onclick="message()" class="btn bg-accent text-white rounded-lg">Subscribe</button></div>
           </div>
           </div>
         </div>
@@ -444,5 +444,6 @@
         </div>
       </div>
     </footer>
+    <script src="scripts.js"></script>
   </body>
 </html>
