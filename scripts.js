@@ -1,3 +1,22 @@
+
+
+// marquee stop
+
+const marquees = document.querySelectorAll('.marquee');
+
+        marquees.forEach(marquee => {
+            marquee.addEventListener('mouseover', function () {
+                marquee.stop();
+            });
+
+            marquee.addEventListener('mouseout', function () {
+                marquee.start();
+            });
+        });
+
+
+
+
 function navigateSlide(event, sliderCarouselId) {
     event.preventDefault();
     const targetSlide = document.getElementById(sliderCarouselId);
@@ -10,8 +29,6 @@ function navigateSlide(event, sliderCarouselId) {
       targetSlide.style.display = 'block';
     }
   }
-  
-// 
 
   // Show the first slide initially
   document.addEventListener('DOMContentLoaded', () => {
