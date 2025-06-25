@@ -35,7 +35,7 @@ A clean, responsive, and modern school website for **Tularampur High School** â€
 git clone https://github.com/mhskdr/TularampurHighSchool.git
 
 ## 2. Navigate into the project directory
-cd tularampur-high-school
+cd TularampurHighSchool
 
 ## 3. Open VS Code
 code.
