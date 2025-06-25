@@ -32,7 +32,7 @@ A clean, responsive, and modern school website for **Tularampur High School** â€
 # Start Locally
 
 ## 1. Clone the repository
-git clone https://github.com/your-username/tularampur-high-school.git
+git clone https://github.com/mhskdr/TularampurHighSchool.git
 
 ## 2. Navigate into the project directory
 cd tularampur-high-school
