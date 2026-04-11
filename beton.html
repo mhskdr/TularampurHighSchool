@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>বেতন - TularampurHighSchool</title>
+    <!-- google-font-sora-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-tiro-bangla-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/4f4ce85480.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css + tailwind + daisyui-->
+     <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              accent: "#0077b6",
+            },
+            fontFamily: {
+              sora: ["Sora", "serif"],
+              tiro:["Tiro Bangla", "serif"]
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sora font-tiro">
+    <header>
+      <nav
+        class="container mx-auto border border-blue-400 md:border-0 lg:border-0 p-4"
+      >
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <a href="index.html"><img class="w-16 h-16 lg:w-fit lg:h-fit" src="assets/Logo1.png" alt="logo-header" /></a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="index.html">হোম</a></li>
+              <li>
+                <details>
+                  <summary>বিবিধ</summary>
+                  <ul class="p-2">
+                    <li><a href="beton.html">বেতন</a></li>
+                    <li><a href="abedon-somuho.html">আবেদন সমূহ</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li><a href="yogajog.html">যোগাযোগ</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-4">
+            <a onclick="message()" class="hidden lg:block" href=""
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+            <a onclick="message()" class="hidden lg:block" href=""
+              ><i class="fa-solid fa-book"></i></a>
+            <a
+            onclick="message()" class="btn border-blue-400 bg-white text-black hidden lg:block lg:flex lg:items-center lg:justify-center"
+              >Login</a
+            >
+            <a
+              href="vorti-abedon.html" class="btn bg-accent text-white hidden lg:block lg:flex lg:items-center lg:justify-center"
+              >ভর্তি আবেদন</a
+            >
+            <div class="dropdown dropdown-end">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a href="index.html">হোম</a></li>
+                <li>
+                  <a>বিবিধ</a>
+                  <ul class="p-2">
+                    <li><a href="beton.html">বেতন</a></li>
+                    <li><a href="abedon-somuho.html">আবেদন সমূহ</a></li>
+                  </ul>
+                </li>
+                <li><a href="yogajog.html">যোগাযোগ</a></li>
+                <li>
+                  <a onclick="message()"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+                <li>
+                  <a onclick="message()"><i class="fa-solid fa-book"></i></a>
+                </li>
+                <li>
+                  <a onclick="message()" class="btn mx-10 border-blue-400 bg-white text-black"
+                    >Login</a
+                  >
+                </li>
+                <li><a href="vorti-abedon.html" class="btn mx-10 bg-accent text-white">ভর্তি আবেদন</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container mx-auto py-20">
+        <div class="text-center">
+          <h1 class="text-5xl font-bold text-accent mb-8">বেতন স্ট্রাকচার</h1>
+          <p>আমাদের বিদ্যালয়ের বেতনের বিস্তারিত তথ্য নিচে দেওয়া হল।</p>
+        </div>
+        <div class="mt-12">
+          <table class="table table-zebra w-full">
+            <thead>
+              <tr>
+                <th>শ্রেণি</th>
+                <th>বেতন (টাকা)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>ষষ্ঠ</td><td>৫০০</td></tr>
+              <tr><td>সপ্তম</td><td>৬০০</td></tr>
+              <tr><td>অষ্টম</td><td>৭০০</td></tr>
+              <tr><td>নবম</td><td>৮০০</td></tr>
+              <tr><td>দশম</td><td>৯০০</td></tr>
+              <tr><td>প্রাক্তন</td><td>১০০০</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-accent mt-96">
+      <div class="container mx-auto relative">
+        <!-- absolute -->
+        <div class="absolute -top-80 left-5 right-5 lg:left-14 lg:right-14 bg-pink-100 rounded-lg p-8 lg:p-36 ">
+          <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
+            <div><img src="assets/news-letter.png" alt="news-letter"></div>
+          <div class="flex flex-col items-center lg:items-start justify-center text-center lg:text-start gap-6">
+            <div><h3 class="font-bold text-accent text-2xl lg:text-4xl lg:text-black">Get <span class="text-accent">Latest</span> Information <span><i class="fa-solid fa-exclamation animate-bounce"></i></span></h3></div>
+            <div><p class="text-base lg:text-xl">News, Bulletin, Feedback, Support and more.</p></div>
+            <div><input type="text" placeholder="Enter email...." class="input w-full max-w-xs bg-white" /></div>
+            <div><button onclick="message()" class="btn bg-accent text-white rounded-lg">Subscribe</button></div>
+          </div>
+          </div>
+        </div>
+        <!-- footer -->
+        <div class="flex flex-col lg:flex-row lg:justify-between gap-8 pb-12 pt-96 px-5 lg:px-36 lg:pb-36">
+          <div>
+            <img class="mb-4 w-16 h-16 lg:w-fit lg:h-fit" src="assets/Logo1.png" alt="logo-footer">
+            <p class="text-white text-xl">বিশ্বায়নের অগ্রযাত্রায় আধুনিক শিক্ষার কারিগর ।</p>
+          </div>
+          <div class="text-white">
+            <a href="index.html"><p class="mb-4">হোম</p></a>
+            <a href="beton.html"><p class="mb-4">বেতন</p></a>
+            <a href="abedon-somuho.html"><p class="mb-4">আবেদন সমূহ</p></a>
+            <a href="yogajog.html"><p class="mb-4">যোগাযোগ</p></a>
+          </div>
+          <div class="text-white">
+            <div class="mb-4"><p>Follow Us</p></div>
+            <div class="flex gap-4">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
