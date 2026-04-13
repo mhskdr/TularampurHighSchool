@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="bn" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>শিক্ষক মণ্ডলী - TularampurHighSchool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/4f4ce85480.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              accent: "#0077b6",
+            },
+            fontFamily: {
+              sora: ["Sora", "serif"],
+              tiro:["Tiro Bangla", "serif"]
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sora font-tiro">
+    <header>
+      <nav class="container mx-auto border border-blue-400 md:border-0 lg:border-0 p-4">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <a href="index.html"><img class="w-16 h-16 lg:w-fit lg:h-fit" src="assets/Logo1.png" alt="logo-header" /></a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="index.html">হোম</a></li>
+              <li>
+                <details>
+                  <summary>বিবিধ</summary>
+                  <ul class="p-2">
+                    <li><a href="beton.html">বেতন</a></li>
+                    <li><a href="abedon-somuho.html">আবেদন সমূহ</a></li>
+                    <li><a href="shikkhok-mondoli.html">শিক্ষক মণ্ডলী</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li><a href="yogajog.html">যোগাযোগ</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-4">
+            <a onclick="message()" class="hidden lg:block" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a onclick="message()" class="hidden lg:block" href=""><i class="fa-solid fa-book"></i></a>
+            <a onclick="message()" class="btn border-blue-400 bg-white text-black hidden lg:block lg:flex lg:items-center lg:justify-center">Login</a>
+            <a href="vorti-abedon.html" class="btn bg-accent text-white hidden lg:block lg:flex lg:items-center lg:justify-center">ভর্তি আবেদন</a>
+            <div class="dropdown dropdown-end">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li><a href="index.html">হোম</a></li>
+                <li>
+                  <a>বিবিধ</a>
+                  <ul class="p-2">
+                    <li><a href="beton.html">বেতন</a></li>
+                    <li><a href="abedon-somuho.html">আবেদন সমূহ</a></li>
+                    <li><a href="shikkhok-mondoli.html">শিক্ষক মণ্ডলী</a></li>
+                  </ul>
+                </li>
+                <li><a href="yogajog.html">যোগাযোগ</a></li>
+                <li><a onclick="message()"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a onclick="message()"><i class="fa-solid fa-book"></i></a></li>
+                <li><a onclick="message()" class="btn mx-10 border-blue-400 bg-white text-black">Login</a></li>
+                <li><a href="vorti-abedon.html" class="btn mx-10 bg-accent text-white">ভর্তি আবেদন</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container mx-auto py-20">
+        <div class="text-center mb-12">
+          <h1 class="text-5xl font-bold text-accent">শিক্ষক মণ্ডলী</h1>
+          <p class="mt-4 text-lg">আমাদের বিদ্যালয়ের শিক্ষক ও সহকারী কর্মীদের বিস্তারিত তথ্য নিচে দেখুন।</p>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="table table-zebra w-full">
+            <thead>
+              <tr>
+                <th>নাম</th>
+                <th>পদবি</th>
+                <th>বিষয়</th>
+                <th>নম্বর</th>
+                <th>ছবি</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ইন্দ্রজিত মন্ডল</td>
+                <td>প্রধান শিক্ষক</td>
+                <td>প্রশাসন</td>
+                <td>০১৭৬১ ৭৩৫৮৭০</td>
+                <td><img src="assets/head sir.jpg" alt="ইন্দ্রজিত মন্ডল" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>নিউটন অধিকারী</td>
+                <td>সহকারী প্রধান শিক্ষক</td>
+                <td>প্রশাসন</td>
+                <td>০১৭১৬ ০৭৯১৬৪</td>
+                <td><img src="assets/newton sir.jpg" alt="নিউটন অধিকারী" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>মোঃ জাকির হোসেন</td>
+                <td>সহকারী শিক্ষক</td>
+                <td>গণিত</td>
+                <td>০১৮৬৬ ২১৫৩৪৭</td>
+                <td><img src="assets/jakir sir.jpg" alt="মোঃ জাকির হোসেন" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>স্বপ্না রাণী বর্মন</td>
+                <td>সহকারী শিক্ষক</td>
+                <td>হিন্দুধর্ম</td>
+                <td>০১৭৪৬ ৯২১৬২৯</td>
+                <td><img src="assets/sopna madam.jpg" alt="স্বপ্না রাণী বর্মন" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>হামিদা পারভীন</td>
+                <td>সহকারী শিক্ষক</td>
+                <td>ইংরেজি</td>
+                <td>০১৮৮০ ০১৮১৯১</td>
+                <td><img src="assets/hamida madam.jpg" alt="হামিদা পারভীন" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>মিলি বিশ্বাস</td>
+                <td>সহকারী শিক্ষক</td>
+                <td>আইসিটি</td>
+                <td>০১৯৭৮ ৬৪৬৭৮৯</td>
+                <td><img src="assets/mili madam.jpg" alt="মিলি বিশ্বাস" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>মোহাম্মদ আলমগীর কবির</td>
+                <td>সহকারী শিক্ষক</td>
+                <td>ইসলাম শিক্ষা</td>
+                <td>০১৭১৮ ৮৬০৬১৭</td>
+                <td><img src="assets/alamgir sir.jpg" alt="মোহাম্মদ আলমগীর কবির" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>প্রীতিষ কুমার বিশ্বাস</td>
+                <td>সহকারী শিক্ষক</td>
+                <td>কৃষিশিক্ষা</td>
+                <td>০১৭১৬ ৫৬৯১৪৭</td>
+                <td><img src="assets/pritish sir.jpg" alt="প্রীতিষ কুমার বিশ্বাস" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>গৌরাঙ্গ কুমার বিশ্বাস</td>
+                <td>সহকারী শিক্ষক</td>
+                <td>সমাজ বিজ্ঞান</td>
+                <td>০১৭৯৬ ৪৫৩৩৪৮</td>
+                <td><img src="assets/gour sir.jpg" alt="গৌরাঙ্গ কুমার বিশ্বাস" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>মোঃ ওয়াহিদুর রহমান</td>
+                <td>সহকারী শিক্ষক</td>
+                <td>শারীরিক শিক্ষা</td>
+                <td>০১৯৬৭ ৫৪৮০৫২</td>
+                <td><img src="assets/wahidur sir.jpg" alt="মোঃ ওয়াহিদুর রহমান" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>সুরাইয়া পারভীন</td>
+                <td>সহকারী শিক্ষক</td>
+                <td>সমাজবিজ্ঞান</td>
+                <td>০১৭৩৬ ৯৫৬০০৮</td>
+                <td><img src="assets/suraiya madam.jpg" alt="সুরাইয়া পারভীন" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>আরতি রাণী বিশ্বাস</td>
+                <td>সহকারী শিক্ষক</td>
+                <td>সমাজবিজ্ঞান</td>
+                <td>০১৭১২ ১২৩৭৭৩</td>
+                <td><img src="assets/aroti madam.jpg" alt="আরতি রাণী বিশ্বাস" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>সুমন কুমার পান্ডে</td>
+                <td>সহকারী শিক্ষক</td>
+                <td>সমাজ বিজ্ঞান / ব্যবসায় শিক্ষা</td>
+                <td>০১৭২৮ ২৯৫৭০৪</td>
+                <td><img src="assets/pandey sir.jpg" alt="সুমন কুমার পান্ডে" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>মিলন অধিকারী</td>
+                <td>সহকারী শিক্ষক</td>
+                <td>সমাজবিজ্ঞান</td>
+                <td>০১৭৪৮ ৯৬১৭৯৯</td>
+                <td><img src="assets/milon sir.jpg" alt="মিলন অধিকারী" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>মোঃ সবুজ মোল্যা</td>
+                <td>সহকারী শিক্ষক</td>
+                <td>বাংলা</td>
+                <td>০১৭২৬ ৫০৫৫৩৮</td>
+                <td><img src="assets/sobuj sir.jpg" alt="মোঃ সবুজ মোল্যা" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>মোঃ নাসিম</td>
+                <td>সহকারী শিক্ষক</td>
+                <td>গ্রন্থাগার ও তথ্য বিজ্ঞান</td>
+                <td>০১৮৮০ ০১৮২১০</td>
+                <td><img src="assets/nasim sir.jpg" alt="মোঃ নাসিম" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>তহমিনা পারভীন</td>
+                <td>সহকারী শিক্ষক</td>
+                <td>ভৌত বিজ্ঞান</td>
+                <td>০১৯১৭ ৯৪৪০২৪</td>
+                <td><img src="assets/tparvin madam.jpg" alt="তহমিনা পারভীন" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>হাসি রাণী বিশ্বাস</td>
+                <td>সহকারী শিক্ষক</td>
+                <td>জীববিজ্ঞান</td>
+                <td>০১৭৩৬ ৫৪১৩৪২</td>
+                <td><img src="assets/hasi madam.jpg" alt="হাসি রাণী বিশ্বাস" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>দুর্গা সরকার</td>
+                <td>সহকারী শিক্ষক</td>
+                <td>ইংরেজি</td>
+                <td>০১৯১৮ ৫৯৮২৩২</td>
+                <td><img src="assets/durga madam.jpg" alt="দুর্গা সরকার" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>প্রিন্স পাঠক</td>
+                <td>সহকারী শিক্ষক</td>
+                <td>ব্যবসায় শিক্ষা</td>
+                <td>০১৯২২ ৬৭২২৭৩</td>
+                <td><img src="assets/pathak sir.jpg" alt="প্রিন্স পাঠক" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>মোছাঃ আছিয়া খাতুন</td>
+                <td>অফিস সহকারী কাম হিসাব সহকারী</td>
+                <td>প্রশাসন</td>
+                <td>০১৭২১ ৫৮৯৬৬৬</td>
+                <td><img src="assets/teacher.png" alt="মোছাঃ আছিয়া খাতুন" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>মোঃ ফাহাদ আল হাসান</td>
+                <td>কম্পিউটার ল্যাব অপারেটর</td>
+                <td>ল্যাব</td>
+                <td>০১৫৮০ ৮৫৮৫৭৩</td>
+                <td><img src="assets/teacher.png" alt="মোঃ ফাহাদ আল হাসান" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>মোসাঃ তাসলিমা খাতুন</td>
+                <td>আয়া</td>
+                <td>সহায়িকা</td>
+                <td>০১৭১৬ ২৫৩৯৩৪</td>
+                <td><img src="assets/teacher.png" alt="মোসাঃ তাসলিমা খাতুন" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>কাদিম খান</td>
+                <td>নৈশ প্রহরী</td>
+                <td>নৈশ প্রহরী</td>
+                <td>০১৬৩৫ ১১৬২৮৭</td>
+                <td><img src="assets/teacher.png" alt="কাদিম খান" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>সুদীপ সরকার</td>
+                <td>অফিস সহায়ক</td>
+                <td>সহায়িকা</td>
+                <td>০১৪০২ ৬২৬২৪৫</td>
+                <td><img src="assets/teacher.png" alt="সুদীপ সরকার" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>সুকদেব বিশ্বাস</td>
+                <td>নিরাপত্তা কর্মী</td>
+                <td>নিরাপত্তা</td>
+                <td>০১৯৪৬ ৫১৭২৭৯</td>
+                <td><img src="assets/teacher.png" alt="সুকদেব বিশ্বাস" class="w-20 rounded-lg" /></td>
+              </tr>
+              <tr>
+                <td>সুস্মিতা বিশ্বাস</td>
+                <td>পরিচ্ছন্নতা কর্মী</td>
+                <td>পরিচ্ছন্নতা</td>
+                <td>০১৫৮৫ ২৫৪০০৬</td>
+                <td><img src="assets/teacher.png" alt="সুস্মিতা বিশ্বাস" class="w-20 rounded-lg" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-accent mt-96">
+      <div class="container mx-auto relative">
+        <div class="absolute -top-80 left-5 right-5 lg:left-14 lg:right-14 bg-pink-100 rounded-lg p-8 lg:p-36">
+          <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
+            <div><img src="assets/news-letter.png" alt="news-letter"></div>
+            <div class="flex flex-col items-center lg:items-start justify-center text-center lg:text-start gap-6">
+              <div><h3 class="font-bold text-accent text-2xl lg:text-4xl lg:text-black">Get <span class="text-accent">Latest</span> Information <span><i class="fa-solid fa-exclamation animate-bounce"></i></span></h3></div>
+              <div><p class="text-base lg:text-xl">News, Bulletin, Feedback, Support and more.</p></div>
+              <div><input type="text" placeholder="Enter email...." class="input w-full max-w-xs bg-white" /></div>
+              <div><button onclick="message()" class="btn bg-accent text-white rounded-lg">Subscribe</button></div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row lg:justify-between gap-8 pb-12 pt-96 px-5 lg:px-36 lg:pb-36">
+          <div>
+            <img class="mb-4 w-16 h-16 lg:w-fit lg:h-fit" src="assets/Logo1.png" alt="logo-footer">
+            <p class="text-white text-xl">বিশ্বায়নের অগ্রযাত্রায় আধুনিক শিক্ষার কারিগর ।</p>
+          </div>
+          <div class="text-white">
+            <a href="index.html"><p class="mb-4">হোম</p></a>
+            <a href="beton.html"><p class="mb-4">বেতন</p></a>
+            <a href="abedon-somuho.html"><p class="mb-4">আবেদন সমূহ</p></a>
+            <a href="shikkhok-mondoli.html"><p class="mb-4">শিক্ষক মণ্ডলী</p></a>
+            <a href="yogajog.html"><p class="mb-4">যোগাযোগ</p></a>
+          </div>
+          <div class="text-white">
+            <div class="mb-4"><p>Follow Us</p></div>
+            <div class="flex gap-4">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
